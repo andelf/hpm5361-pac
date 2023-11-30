@@ -11817,7 +11817,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
       </addressBlock>
       <registers>
         <register>
-          <name>mode</name>
+          <name>wave_mode</name>
           <description>analog waves mode</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -12042,7 +12042,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
           </fields>
         </register>
         <register>
-          <name>resolution</name>
+          <name>wave_resolution</name>
           <description>resolution of wave0/1/2</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -12062,7 +12062,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
           <dim>3</dim>
           <dimIncrement>0x4</dimIncrement>
           <dimIndex>wave0,wave1,wave2</dimIndex>
-          <name>PHASE_SHIFT[%s]</name>
+          <name>PHASE_SHIFT_WAVE[%s]</name>
           <description>no description available</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -12248,7 +12248,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
           </fields>
         </register>
         <register>
-          <name>mode</name>
+          <name>abz_mode</name>
           <description>wave_a/b/z output mode</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
@@ -12336,7 +12336,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
           </fields>
         </register>
         <register>
-          <name>resolution</name>
+          <name>abz_resolution</name>
           <description>resolution of wave_a/b/z</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
@@ -12356,7 +12356,7 @@ Default 1.25us@200MHz;   max 80ms;</description>
           <dim>3</dim>
           <dimIncrement>0x4</dimIncrement>
           <dimIndex>a,b,z</dimIndex>
-          <name>PHASE_SHIFT[%s]</name>
+          <name>PHASE_SHIFT_ABZ[%s]</name>
           <description>no description available</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
@@ -16187,7 +16187,8 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
           <fields>
             <field>
               <name>DELAY</name>
-              <description>Delay  in clock cycle for synchronous signal, the value shoud less than half of exc_period.exc_period.
+              <description>Delay  in clock cycle for synchronous signal
+, the value shoud less than half of exc_period.exc_period.
 0: invalid value
 1: 1 cycles
 2: 2 cycles
@@ -16336,7 +16337,8 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
           <fields>
             <field>
               <name>DELAY</name>
-              <description>Delay  in clock cycle for synchronous signal, the value shoud less than half of exc_period.exc_period.
+              <description>Delay  in clock cycle for synchronous signal
+, the value shoud less than half of exc_period.exc_period.
 0: invalid value
 1: 1 cycles
 2: 2 cycles
@@ -17140,7 +17142,7 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
           <description>no description available</description>
           <addressOffset>0x0</addressOffset>
           <register>
-            <name>CTRL</name>
+            <name>ENGINE_CTRL</name>
             <description>Engine control register</description>
             <addressOffset>0x0</addressOffset>
             <size>32</size>
@@ -17374,7 +17376,7 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
             </fields>
           </register>
           <register>
-            <name>CTRL</name>
+            <name>XCVR_CTRL</name>
             <description>Transceiver control register</description>
             <addressOffset>0x20</addressOffset>
             <size>32</size>
@@ -17811,7 +17813,7 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
             </fields>
           </register>
           <register>
-            <name>PRD_CFG</name>
+            <name>TRG_PRD_CFG</name>
             <description>Period trigger configuration</description>
             <addressOffset>0x48</addressOffset>
             <size>32</size>
@@ -17994,7 +17996,7 @@ Note: user should configure pair bit and this bitfield before PWM output is enab
             <dim>4</dim>
             <dimIncrement>0x4</dimIncrement>
             <dimIndex>0,1,2,3</dimIndex>
-            <name>CMD[%s]</name>
+            <name>TRG_TABLE_CMD[%s]</name>
             <description>no description available</description>
             <addressOffset>0x80</addressOffset>
             <size>32</size>
@@ -24800,7 +24802,7 @@ SW should clear all cycle bit in buffer to 0 before clear dma_rst</description>
           <dim>16</dim>
           <dimIncrement>0x10</dimIncrement>
           <dimIndex>chn0,chn1,chn2,chn3,chn4,chn5,chn6,chn7,chn8,chn9,chn10,chn11,chn12,chn13,chn14,chn15</dimIndex>
-          <name>PRD_CFG[%s]</name>
+          <name>PRD_CFG_CHN[%s]</name>
           <description>no description available</description>
           <addressOffset>0xc00</addressOffset>
           <register>
