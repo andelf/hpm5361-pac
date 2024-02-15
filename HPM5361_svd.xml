@@ -2428,7 +2428,7 @@ NOTE: there will be no 1.5/2 STOP bits if enabled this feature, LCR.STB should b
         <register>
           <name>RBR</name>
           <description>Receiver Buffer Register (when DLAB = 0)</description>
-          <alternateGroup>UNION_20</alternateGroup>
+          <!-- <alternateGroup>UNION_20</alternateGroup> -->
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -2446,7 +2446,7 @@ NOTE: there will be no 1.5/2 STOP bits if enabled this feature, LCR.STB should b
         <register>
           <name>THR</name>
           <description>Transmitter Holding Register (when DLAB = 0)</description>
-          <alternateGroup>UNION_20</alternateGroup>
+          <!-- <alternateGroup>UNION_20</alternateGroup> -->
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -2464,7 +2464,7 @@ NOTE: there will be no 1.5/2 STOP bits if enabled this feature, LCR.STB should b
         <register>
           <name>DLL</name>
           <description>Divisor Latch LSB (when DLAB = 1)</description>
-          <alternateGroup>UNION_20</alternateGroup>
+          <!-- <alternateGroup>UNION_20</alternateGroup> -->
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0x00000001</resetValue>
@@ -2482,7 +2482,7 @@ NOTE: there will be no 1.5/2 STOP bits if enabled this feature, LCR.STB should b
         <register>
           <name>IER</name>
           <description>Interrupt Enable Register (when DLAB = 0)</description>
-          <alternateGroup>UNION_24</alternateGroup>
+          <!-- <alternateGroup>UNION_24</alternateGroup> -->
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -2568,7 +2568,7 @@ character timeout interrupt
         <register>
           <name>DLM</name>
           <description>Divisor Latch MSB (when DLAB = 1)</description>
-          <alternateGroup>UNION_24</alternateGroup>
+          <!-- <alternateGroup>UNION_24</alternateGroup> -->
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -2586,7 +2586,7 @@ character timeout interrupt
         <register>
           <name>IIR</name>
           <description>Interrupt Identification Register</description>
-          <alternateGroup>UNION_28</alternateGroup>
+          <!-- <alternateGroup>UNION_28</alternateGroup> -->
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0x00000001</resetValue>
@@ -2623,7 +2623,7 @@ Register (FIFOE) is set to 1.</description>
         <register>
           <name>FCR</name>
           <description>FIFO Control Register</description>
-          <alternateGroup>UNION_28</alternateGroup>
+          <!-- <alternateGroup>UNION_28</alternateGroup> -->
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -14683,7 +14683,7 @@ otherwise the shadow registers can not be written.</description>
         <register>
           <name>sta</name>
           <description>Counter start register</description>
-          <alternateGroup>UNION_STA</alternateGroup>
+          <!-- <alternateGroup>UNION_STA</alternateGroup> -->
           <addressOffset>0x4</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -14709,7 +14709,7 @@ otherwise the shadow registers can not be written.</description>
         <register>
           <name>rld</name>
           <description>Counter reload register</description>
-          <alternateGroup>UNION_RLD</alternateGroup>
+          <!-- <alternateGroup>UNION_RLD</alternateGroup> -->
           <addressOffset>0x8</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -21356,7 +21356,7 @@ The bit field values description below is represented as (Frame List Size) Numbe
         <register>
           <name>DEVICEADDR</name>
           <description>Device Address Register</description>
-          <alternateGroup>UNION_154</alternateGroup>
+          <!-- <alternateGroup>UNION_154</alternateGroup> -->
           <addressOffset>0x154</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -21392,7 +21392,7 @@ If the DCD writes the USBADR with USBADRA=1 after the SET_ADDRESS data phase (be
         <register>
           <name>PERIODICLISTBASE</name>
           <description>Frame List Base Address Register</description>
-          <alternateGroup>UNION_154</alternateGroup>
+          <!-- <alternateGroup>UNION_154</alternateGroup> -->
           <addressOffset>0x154</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -21413,7 +21413,7 @@ Only used by the host controller.</description>
         <register>
           <name>ASYNCLISTADDR</name>
           <description>Next Asynch. Address Register</description>
-          <alternateGroup>UNION_158</alternateGroup>
+          <!-- <alternateGroup>UNION_158</alternateGroup> -->
           <addressOffset>0x158</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
@@ -21435,7 +21435,7 @@ Only used by the host controller.</description>
         <register>
           <name>ENDPTLISTADDR</name>
           <description>Endpoint List Address Register</description>
-          <alternateGroup>UNION_158</alternateGroup>
+          <!-- <alternateGroup>UNION_158</alternateGroup> -->
           <addressOffset>0x158</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
