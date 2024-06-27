@@ -1,13 +1,13 @@
 [package]
 name = "hpm5361-pac"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2021"
 authors = ["Andelf <andelf@gmail.com>"]
 repository = "https://github.com/andelf/hpm5361-pac"
 documentation = "https://docs.rs/hpm5361-pac"
 homepage = "https://github.com/andelf/hpm5361-pac"
 categories = []
-description = "Peripheral access API for HPM5361 microcontrollers"
+description = "DEPRECATED, use hpm-metapac instead"
 keywords = ["hpm5331", "hpm5321", "hpm5301", "hpm5361"]
 readme = "README.md"
 license = "BSD-3-Clause"
